@@ -13,7 +13,7 @@ class OurUser(models.Model):
         "3": "worker",
     }
     role = models.CharField(max_length=1, choices=role_choices, default=role_choices["1"])
-    profile_img = models.ImageField(upload_to="users/profiles/", blank=True, null=True)
+    profile_img = models.ImageField(upload_to="img/", blank=True, null=True)
 
     def __str__(self):
         return self.name
